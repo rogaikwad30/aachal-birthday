@@ -1,4 +1,4 @@
-const UNLOCK_AT = 178414020;
+const UNLOCK_AT = 1784140200;
 
 function isUnlocked() {
   return Math.floor(Date.now() / 1000) >= UNLOCK_AT;
