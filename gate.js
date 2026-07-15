@@ -1,4 +1,4 @@
-const UNLOCK_AT = 1784140200;
+const UNLOCK_AT = 178414020;
 
 function isUnlocked() {
   return Math.floor(Date.now() / 1000) >= UNLOCK_AT;
@@ -48,6 +48,7 @@ function createGateOverlay() {
         </div>
       </div>
       <p class="site-gate-note">Come back when the clock hits zero ✨</p>
+      <p class="site-gate-music">Tap anywhere to turn the music on 🎵</p>
     </div>
   `;
   document.body.appendChild(gate);

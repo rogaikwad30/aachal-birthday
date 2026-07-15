@@ -40,7 +40,7 @@ html.site-locked body {
   overflow: hidden;
 }
 
-html.site-locked body > *:not(#siteGate) {
+html.site-locked body > *:not(#siteGate):not(#music-player-wrap) {
   display: none !important;
 }
 
@@ -148,6 +148,14 @@ html.site-locked body > *:not(#siteGate) {
   color: rgba(107, 58, 92, 0.55);
 }
 
+.site-gate-music {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: rgba(107, 58, 92, 0.4);
+  margin-top: 0.75rem;
+}
+
 @media (max-width: 480px) {
   .site-gate-timer {
     gap: 0.35rem;
@@ -162,6 +170,24 @@ html.site-locked body > *:not(#siteGate) {
     font-size: 1.5rem;
     padding-bottom: 1rem;
   }
+}
+
+#music-player-wrap {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 250;
+}
+
+#music-player-wrap iframe {
+  width: 1px;
+  height: 1px;
+  border: 0;
 }
 
 .hidden {
