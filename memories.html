@@ -8,6 +8,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    if (Math.floor(Date.now() / 1000) < 1784140200) {
+      document.documentElement.classList.add("site-locked");
+    }
+  </script>
 </head>
 <body class="page-memories">
   <div class="balloons" aria-hidden="true">
@@ -154,6 +159,7 @@
     <p>Made with love · By Rohan <span id="year"></span></p>
   </footer>
 
+  <script src="gate.js"></script>
   <script src="memories.js"></script>
 </body>
 </html>

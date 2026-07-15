@@ -7,7 +7,8 @@ const dinnerButtons = document.getElementById("dinnerButtons");
 const dinnerInvite = document.getElementById("dinnerInvite");
 const dinnerResponse = document.getElementById("dinnerResponse");
 
-yearEl.textContent = new Date().getFullYear();
+let particles = [];
+let animationId = null;
 
 function dodgeNoButton() {
   if (!dinnerNo || !dinnerButtons) return;
@@ -53,32 +54,10 @@ function acceptDinner() {
   launchConfetti(180);
 }
 
-if (dinnerNo) {
-  dinnerNo.addEventListener("mouseenter", dodgeNoButton);
-  dinnerNo.addEventListener(
-    "touchstart",
-    (event) => {
-      event.preventDefault();
-      dodgeNoButton();
-    },
-    { passive: false }
-  );
-}
-
-if (dinnerYes) {
-  dinnerYes.addEventListener("click", acceptDinner);
-}
-
-let particles = [];
-let animationId = null;
-
 function resizeCanvas() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 }
-
-resizeCanvas();
-window.addEventListener("resize", resizeCanvas);
 
 const colors = ["#f8b4c4", "#e8c872", "#c9a0e8", "#ffd6a5", "#ff8fc7", "#ffffff"];
 
@@ -151,3 +130,28 @@ function launchConfetti(intensity = 120) {
     animateConfetti();
   }
 }
+
+function initDinnerPage() {
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  if (dinnerNo) {
+    dinnerNo.addEventListener("mouseenter", dodgeNoButton);
+    dinnerNo.addEventListener(
+      "touchstart",
+      (event) => {
+        event.preventDefault();
+        dodgeNoButton();
+      },
+      { passive: false }
+    );
+  }
+
+  if (dinnerYes) {
+    dinnerYes.addEventListener("click", acceptDinner);
+  }
+
+  resizeCanvas();
+}
+
+SiteGate.whenUnlocked(initDinnerPage);
+window.addEventListener("resize", resizeCanvas);

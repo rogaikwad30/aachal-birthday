@@ -146,4 +146,6 @@ if (celebrateBtn) {
   });
 }
 
-window.addEventListener("load", startLoader);
+window.addEventListener("load", () => {
+  SiteGate.whenUnlocked(startLoader);
+});
