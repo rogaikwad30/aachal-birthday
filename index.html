@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Aachal! 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-loader" id="pageLoader" aria-live="polite" aria-busy="true">
+    <div class="loader-inner">
+      <div class="loader-cake" aria-hidden="true">
+        <div class="candle"><div class="flame"></div></div>
+        <div class="frosting"></div>
+        <div class="layer layer-top"></div>
+        <div class="layer layer-bottom"></div>
+      </div>
+      <p class="loader-text">Getting your birthday wish ready…</p>
+      <div class="loader-bar">
+        <div class="loader-bar-fill" id="loaderBarFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content hidden" id="pageContent">
+  <canvas id="confetti"></canvas>
+
+  <div class="balloons" aria-hidden="true">
+    <div class="balloon balloon-1"></div>
+    <div class="balloon balloon-2"></div>
+    <div class="balloon balloon-3"></div>
+    <div class="balloon balloon-4"></div>
+    <div class="balloon balloon-5"></div>
+  </div>
+
+  <div class="sparkles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <main class="card">
+    <div class="ribbon">✦</div>
+
+    <p class="pre-title">Hey — it's your day</p>
+    <h1 class="title">Happy Birthday</h1>
+    <h2 class="name" id="nameDisplay" aria-label="Aachal"></h2>
+
+    <div class="divider">
+      <span class="heart">♥</span>
+    </div>
+
+    <p class="message">
+      Happy birthday, Aachal. You're genuinely one of the nicest people I know —
+      kind without trying, calm when things get messy, and somehow always easy to talk to.
+    </p>
+
+    <p class="wish">
+      Hope this year gives you more trips, more good food, and more of those
+      quiet moments that actually make you smile.
+    </p>
+
+    <div class="cake" aria-hidden="true">
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+      <div class="frosting"></div>
+      <div class="layer layer-top"></div>
+      <div class="layer layer-bottom"></div>
+    </div>
+
+    <p class="signature">— with love</p>
+
+    <button class="celebrate-btn" id="celebrateBtn">Celebrate! 🎉</button>
+
+    <a href="memories.html" class="secondary-link">Some photos I like of you →</a>
+    <a href="dinner.html" class="secondary-link secondary-link--invite">There's something else for you →</a>
+  </main>
+
+  <footer>
+    <p>Made with love · <span id="year"></span></p>
+  </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

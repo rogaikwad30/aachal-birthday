@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinner Invite · Aachal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-dinner">
+  <canvas id="confetti"></canvas>
+
+  <div class="sparkles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-link">← Birthday Wish</a>
+  </nav>
+
+  <main class="invite-card">
+    <div class="invite-glow" aria-hidden="true"></div>
+
+    <header class="invite-header">
+      <p class="invite-eyebrow">You're cordially invited</p>
+      <h1 class="invite-title">Dinner with me</h1>
+      <p class="invite-for">for <span>Aachal</span></p>
+    </header>
+
+    <div class="invite-details">
+      <div class="detail-block">
+        <span class="detail-icon">📅</span>
+        <div>
+          <p class="detail-label">When</p>
+          <p class="detail-value">Tomorrow evening</p>
+        </div>
+      </div>
+
+      <div class="detail-divider" aria-hidden="true"></div>
+
+      <div class="detail-block detail-block--time">
+        <span class="detail-icon">🕘</span>
+        <div>
+          <p class="detail-label">Time</p>
+          <p class="detail-value detail-value--large">9:00 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="invite-note">
+      Good food, easy conversation, and a quiet evening —
+      just the two of us. Say yes?
+    </p>
+
+    <div class="invite-actions" id="dinnerInvite">
+      <div class="invite-buttons" id="dinnerButtons">
+        <button type="button" class="invite-btn invite-yes" id="dinnerYes">Yes, I'd love to!</button>
+        <button type="button" class="invite-btn invite-no" id="dinnerNo">No</button>
+      </div>
+      <p class="invite-response hidden" id="dinnerResponse" aria-live="polite"></p>
+    </div>
+
+    <footer class="invite-footer">
+      <a href="memories.html" class="invite-link">See your photos →</a>
+    </footer>
+  </main>
+
+  <footer>
+    <p>Made with love · <span id="year"></span></p>
+  </footer>
+
+  <script src="dinner.js"></script>
+</body>
+</html>

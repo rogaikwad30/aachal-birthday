@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful Moments · Aaru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-memories">
+  <div class="balloons" aria-hidden="true">
+    <div class="balloon balloon-1"></div>
+    <div class="balloon balloon-2"></div>
+    <div class="balloon balloon-3"></div>
+    <div class="balloon balloon-4"></div>
+    <div class="balloon balloon-5"></div>
+  </div>
+
+  <div class="sparkles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-link">← Birthday Wish</a>
+  </nav>
+
+  <header class="memories-header">
+    <p class="pre-title">A few photos I like</p>
+    <h1 class="memories-title">Some of My Favourite Moments</h1>
+    <p class="memories-subtitle">
+      Just three pictures — but they say a lot about who you are.
+    </p>
+    <div class="divider">
+      <span class="heart">♥</span>
+    </div>
+  </header>
+
+  <section class="testimonials">
+    <!-- Photo 1: Travel -->
+    <article class="testimonial-card reveal" data-theme="travel">
+      <div class="photo-frame">
+        <img src="images/left.jpeg" alt="Aaru on her travels" />
+        <span class="photo-hint">Add photo to images/photo1.jpg</span>
+      </div>
+      <div class="testimonial-content">
+        <span class="testimonial-tag">Travel</span>
+        <blockquote class="testimonial-quote">
+          You actually enjoy going new places — not just for photos, but because
+          you like seeing how things are somewhere else. That curiosity suits you.
+        </blockquote>
+        <p class="testimonial-caption">Trips are more fun with you around.</p>
+      </div>
+    </article>
+
+    <!-- Photo 2: Soft spoken -->
+    <article class="testimonial-card testimonial-card--featured reveal" data-theme="gentle">
+      <div class="photo-frame">
+        <img src="images/center.jpeg" alt="Aaru's gentle smile" />
+        <span class="photo-hint">Add photo to images/center-image.jpeg</span>
+      </div>
+      <div class="testimonial-content">
+        <span class="testimonial-tag">Soft-spoken</span>
+        <blockquote class="testimonial-quote">
+          You're not loud — you don't need to be. When you say something, it
+          actually means something. That quiet way of yours is one of the things
+          I notice most.
+        </blockquote>
+        <p class="testimonial-caption">You say less, but it lands.</p>
+      </div>
+    </article>
+
+    <!-- Photo 3: Caring & loving -->
+    <article class="testimonial-card reveal" data-theme="love">
+      <div class="photo-frame">
+        <img src="images/right.jpeg" alt="Aaru's caring heart" />
+        <span class="photo-hint">Add photo to images/photo3.jpg</span>
+      </div>
+      <div class="testimonial-content">
+        <span class="testimonial-tag">Caring</span>
+        <blockquote class="testimonial-quote">
+          You look after people without making a big deal of it. You remember
+          things, you check in, you show up — and that's rare. It says a lot
+          about the kind of person you are.
+        </blockquote>
+        <p class="testimonial-caption">People feel safe around you.</p>
+      </div>
+    </article>
+  </section>
+
+  <div class="memories-footer">
+    <p class="closing-line">Only three photos — but there's a lot more to you than this.</p>
+    <a href="index.html" class="celebrate-btn nav-cta">Back to Your Birthday Wish 🎂</a>
+  </div>
+
+  <footer>
+    <p>Made with love · <span id="year"></span></p>
+  </footer>
+
+  <script src="memories.js"></script>
+</body>
+</html>
